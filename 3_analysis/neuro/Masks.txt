@@ -1,6 +1,0 @@
-DMN_final
-MPFC_final
-TPJ_final
-FFA_final
-PCC_final
-VS_final
