@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Run this to check whether any of your functional scans are missing
 #Environmental Variables
 # NRUNS defines the number of runs in your dataset
 NRUNS=5
