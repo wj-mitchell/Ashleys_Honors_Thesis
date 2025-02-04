@@ -3,7 +3,7 @@ SUBJECTS_A=$(cat 3_analysis/neuro/CondA_Subs.text)
 SUBJECTS_B=$(cat 3_analysis/neuro/CondB_Subs.text)
 
 # This will run our first-level analysis in parallel, much like it had above
-for subj in $SUBJECTS_A; do
+for subj in $SUBJECTS_B; do
     # Create the main subject directory, ensure parent directories are created as needed
     mkdir -p 1_data/deriv/fmriprep/$subj
     
