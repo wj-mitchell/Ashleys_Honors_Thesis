@@ -1,0 +1,14 @@
+
+/bin/cp /tmp/feat_nzktjope.fsf design.fsf
+
+/home/tuo62915/fsl/bin/feat_model design
+
+mkdir .files;cp /home/tuo62915/fsl/doc/fsl.css .files;cp -r /home/tuo62915/fsl/doc/images .files/images
+
+/home/tuo62915/fsl/bin/fsl_sub -T 10 -l logs -N feat0_init   /home/tuo62915/fsl/bin/feat /home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/func/Task_run-1.feat/design.fsf -D /home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/func/Task_run-1.feat -I 1 -init
+11940
+
+/home/tuo62915/fsl/bin/fsl_sub -T 30 -l logs -N feat2_pre -j 11940  /home/tuo62915/fsl/bin/feat /home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/func/Task_run-1.feat/design.fsf -D /home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/func/Task_run-1.feat -I 1 -prestats
+12063
+
+/home/tuo62915/fsl/bin/fsl_sub -T 128 -l logs -N feat3_film -j 12063  /home/tuo62915/fsl/bin/feat /home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/func/Task_run-1.feat/design.fsf -D /home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/func/Task_run-1.feat -I 1 -stats

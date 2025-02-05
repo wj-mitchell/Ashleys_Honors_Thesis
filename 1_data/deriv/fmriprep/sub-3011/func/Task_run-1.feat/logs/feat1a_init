@@ -1,0 +1,6 @@
+</pre><hr>Initialisation<br><pre>
+
+/home/tuo62915/fsl/bin/fslmaths /home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/func/sub-3011_task-uncertainty_run-1_space-MNI152NLin2009cAsym_desc-preproc_bold prefiltered_func_data -odt float
+Total original volumes = 729
+
+/home/tuo62915/fsl/bin/fslroi prefiltered_func_data example_func 364 1

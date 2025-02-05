@@ -2,7 +2,7 @@
 
 # Environmental Variables
 # PROJECT captures the filepath for all relevant project data, scripts, documents, etc.
-PROJECT="/media/tuo62915/TOSHIBA EXT"
+PROJECT=/home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep
 # CODE should contain this file, your heuristic.py file (eventually), and your text file containing your list of participants.
 CODE=/home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/3_analysis/neuro/
 # Contains a list of your subjects, which should match the names of your BIDS folders
@@ -17,7 +17,7 @@ SUBJECTS=`cat ${CODE}/particpants.txt`
 
                 #Manages the number of jobs and cores
                 SCRIPTNAME=${CODE}/01_script_FirstLvlAnalysis.sh
-                NSUBJ=10
+                NSUBJ=3
                 while [ $(ps -ef | grep -v grep | grep $SCRIPTNAME | wc -l) -ge $NSUBJ ]; do
                     sleep 1m
                 done

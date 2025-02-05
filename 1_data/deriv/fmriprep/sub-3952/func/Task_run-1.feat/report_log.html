@@ -1,0 +1,21 @@
+<HTML><HEAD>
+<!--refreshstart-->
+<META HTTP-EQUIV=REFRESH CONTENT=5>
+<!--refreshstop-->
+<link REL=stylesheet TYPE=text/css href=.files/fsl.css>
+<TITLE>FSL</TITLE></HEAD><BODY><OBJECT data=report.html></OBJECT>
+<h2>Progress Report / Log</h2>
+Started at Wed Feb  5 04:32:08 PM EST 2025<p>
+Feat main script<br><pre>
+
+/bin/cp /home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/DesignFiles/design_run1.fsf design.fsf
+
+/home/tuo62915/fsl/bin/feat_model design
+
+mkdir .files;cp /home/tuo62915/fsl/doc/fsl.css .files;cp -r /home/tuo62915/fsl/doc/images .files/images
+
+/home/tuo62915/fsl/bin/fsl_sub -T 10 -l logs -N feat0_init   /home/tuo62915/fsl/bin/feat /home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/Task_run-1.feat/design.fsf -D /home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/Task_run-1.feat -I 1 -init
+</pre><hr>Initialisation<br><pre>
+
+/home/tuo62915/fsl/bin/fslmaths /home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/sub-3952_task-uncertainty_run-1_space-MNI152NLin2009cAsym_desc-preproc_bold prefiltered_func_data -odt float
+</pre><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></BODY></HTML>

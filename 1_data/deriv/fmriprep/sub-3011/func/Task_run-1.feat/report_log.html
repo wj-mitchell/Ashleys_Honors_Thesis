@@ -1,0 +1,52 @@
+<HTML><HEAD>
+<!--refreshstart-->
+<META HTTP-EQUIV=REFRESH CONTENT=5>
+<!--refreshstop-->
+<link REL=stylesheet TYPE=text/css href=.files/fsl.css>
+<TITLE>FSL</TITLE></HEAD><BODY><OBJECT data=report.html></OBJECT>
+<h2>Progress Report / Log</h2>
+Started at Wed Feb  5 04:50:24 PM EST 2025<p>
+Feat main script<br><pre>
+
+/bin/cp /tmp/feat_nzktjope.fsf design.fsf
+
+/home/tuo62915/fsl/bin/feat_model design
+
+mkdir .files;cp /home/tuo62915/fsl/doc/fsl.css .files;cp -r /home/tuo62915/fsl/doc/images .files/images
+
+/home/tuo62915/fsl/bin/fsl_sub -T 10 -l logs -N feat0_init   /home/tuo62915/fsl/bin/feat /home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/func/Task_run-1.feat/design.fsf -D /home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/func/Task_run-1.feat -I 1 -init
+11940
+
+/home/tuo62915/fsl/bin/fsl_sub -T 30 -l logs -N feat2_pre -j 11940  /home/tuo62915/fsl/bin/feat /home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/func/Task_run-1.feat/design.fsf -D /home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/func/Task_run-1.feat -I 1 -prestats
+12063
+
+/home/tuo62915/fsl/bin/fsl_sub -T 128 -l logs -N feat3_film -j 12063  /home/tuo62915/fsl/bin/feat /home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/func/Task_run-1.feat/design.fsf -D /home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/func/Task_run-1.feat -I 1 -stats
+</pre><hr>Initialisation<br><pre>
+
+/home/tuo62915/fsl/bin/fslmaths /home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/func/sub-3011_task-uncertainty_run-1_space-MNI152NLin2009cAsym_desc-preproc_bold prefiltered_func_data -odt float
+Total original volumes = 729
+
+/home/tuo62915/fsl/bin/fslroi prefiltered_func_data example_func 364 1
+</pre><hr>Preprocessing:Stage 1<br><pre>
+</pre><hr>Preprocessing:Stage 2<br><pre>
+
+/home/tuo62915/fsl/bin/fslmaths prefiltered_func_data filtered_func_data
+
+/home/tuo62915/fsl/bin/fslmaths filtered_func_data -Tmin -bin mask -odt char
+
+/home/tuo62915/fsl/bin/fslstats filtered_func_data -k mask -R | awk '{ print  }' -
+0.015381
+
+/home/tuo62915/fsl/bin/fslmaths filtered_func_data -Tmean mean_func
+
+/bin/rm -rf prefiltered_func_data*
+</pre><hr>Stats<br><pre>
+
+mkdir -p custom_timing_files ; /home/tuo62915/fsl/bin/fslFixText /home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/onset/output.txt custom_timing_files/ev1.txt
+
+paste -d  ' '  /home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/func/sub-3011_task-uncertainty_run-1_desc-confounds_timeseries_reduced.tsv > confoundevs.txt
+
+/home/tuo62915/fsl/bin/feat_model design confoundevs.txt
+
+/home/tuo62915/fsl/bin/film_gls --in=filtered_func_data --rn=stats --pd=design.mat --thr=0.015381 --sa --ms=5 --con=design.con  
+</pre><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></BODY></HTML>

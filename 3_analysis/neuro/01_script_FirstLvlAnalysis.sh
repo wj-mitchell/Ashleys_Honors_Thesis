@@ -2,7 +2,7 @@ SUBJ=$1
 
 # Environmental Variables
 # PROJECT captures the filepath for all relevant project data, scripts, documents, etc.
-PROJECT="/media/tuo62915/TOSHIBA EXT"
+PROJECT=/home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep
 # CODE should contain this file, your heuristic.py file (eventually), and your text file containing your list of participants.
 CODE=/home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/3_analysis/neuro/
 
@@ -37,7 +37,7 @@ for RUN in 1 2 ; do
 
     # Now everything is set up to run feat
     echo "===> Running FEAT for ${SUBJ}, run ${RUN}"
-    /usr/local/fsl/bin/feat ${PROJECT}/${SUBJ}/func/DesignFiles/design_run${RUN}.fsf   
+    feat ${PROJECT}/${SUBJ}/func/DesignFiles/design_run${RUN}.fsf   
 
 done
 echo

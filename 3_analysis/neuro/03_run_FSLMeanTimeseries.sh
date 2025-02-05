@@ -1,19 +1,16 @@
 #!/bin/bash -x
 
-#Environmental Variables
-
+# Environmental Variables
 # PROJECT captures the filepath for all relevant project data, scripts, documents, etc.
-PROJECT=/data/MRI_Final/
-#DERIV is the output for your preprocessed data
-DERIV=${PROJECT}/deriv/pipeline_1/fmriprep
+PROJECT=/home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep
 # CODE should contain this file, your heuristic.py file (eventually), and your text file containing your list of participants.
-CODE=${PROJECT}/code/
+CODE=/home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/3_analysis/neuro/
 # Contains a list of your subjects, which should match the names of your BIDS folders
-SUBJECTS=`cat ${CODE}/Participants.txt`
+SUBJECTS=`cat ${CODE}/particpants.txt`
 #NRUNS defines the number of runs in your dataset
-NRUNS=5
+NRUNS=2
 # Contains a list of your subjects, which should match the names of your BIDS folders
-MASKS=`cat ${CODE}/Masks.txt`
+MASKS=`cat ${CODE}/rois/masks.txt`
 #kj- add path ROI for rois 
 ROI=${CODE}/rois
 
@@ -33,7 +30,7 @@ for subj in ${SUBJECTS}; do
     for run in `seq -w 1 ${NRUNS}` ; do
 
         # The feat directory containing first level process information
-        FEAT=${DERIV}/${subj}/func/Task_run-${run}.feat
+        FEAT=${PROJECT}/${subj}/func/Task_run-${run}.feat
 
         echo "===> Creating registration files for ${subj}'s run ${run}"
         mkdir ${FEAT}/reg
@@ -48,7 +45,7 @@ for subj in ${SUBJECTS}; do
         for roi in ${MASKS} ; do
     
             #Manages the number of jobs and cores
-            SCRIPTNAME=${CODE}/07_script_FSLMeanTimeseries.sh
+            SCRIPTNAME=${CODE}/03_script_FSLMeanTimeseries.sh
             NSUBJ=10
             while [ $(ps -ef | grep -v grep | grep $SCRIPTNAME | wc -l) -ge $NSUBJ ]; do
                 sleep 1m
