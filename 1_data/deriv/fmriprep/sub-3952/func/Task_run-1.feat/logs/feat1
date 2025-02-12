@@ -1,8 +1,21 @@
 
-/bin/cp /home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/DesignFiles/design_run1.fsf design.fsf
+/bin/cp /data/Ashleys_Honors_Thesis/3_analysis/neuro/../../1_data/deriv/fmriprep/sub-3952/func/DesignFiles/design_run1.fsf design.fsf
 
-/home/tuo62915/fsl/bin/feat_model design
+/usr/local/fsl/bin/feat_model design
 
-mkdir .files;cp /home/tuo62915/fsl/doc/fsl.css .files;cp -r /home/tuo62915/fsl/doc/images .files/images
+mkdir .files;cp /usr/local/fsl/doc/fsl.css .files;cp -r /usr/local/fsl/doc/images .files/images
 
-/home/tuo62915/fsl/bin/fsl_sub -T 10 -l logs -N feat0_init   /home/tuo62915/fsl/bin/feat /home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/Task_run-1.feat/design.fsf -D /home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/Task_run-1.feat -I 1 -init
+/usr/local/fsl/bin/fsl_sub -T 10 -l logs -N feat0_init   /usr/local/fsl/bin/feat /data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/Task_run-1.feat/design.fsf -D /data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/Task_run-1.feat -I 1 -init
+567024
+
+/usr/local/fsl/bin/fsl_sub -T 30 -l logs -N feat2_pre -j 567024  /usr/local/fsl/bin/feat /data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/Task_run-1.feat/design.fsf -D /data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/Task_run-1.feat -I 1 -prestats
+569604
+
+/usr/local/fsl/bin/fsl_sub -T 3030 -l logs -N feat3_film -j 569604  /usr/local/fsl/bin/feat /data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/Task_run-1.feat/design.fsf -D /data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/Task_run-1.feat -I 1 -stats
+577447
+
+/usr/local/fsl/bin/fsl_sub -T 119 -l logs -N feat4_post -j 577447  /usr/local/fsl/bin/feat /data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/Task_run-1.feat/design.fsf -D /data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/Task_run-1.feat -poststats 0 
+631214
+
+/usr/local/fsl/bin/fsl_sub -T 1 -l logs -N feat5_stop -j 569604,577447,631214  /usr/local/fsl/bin/feat /data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/Task_run-1.feat/design.fsf -D /data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/Task_run-1.feat -stop
+631924

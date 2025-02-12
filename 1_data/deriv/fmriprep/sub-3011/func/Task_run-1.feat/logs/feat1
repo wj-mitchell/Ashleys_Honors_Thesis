@@ -1,14 +1,21 @@
 
-/bin/cp /tmp/feat_nzktjope.fsf design.fsf
+/bin/cp /data/Ashleys_Honors_Thesis/3_analysis/neuro/../../1_data/deriv/fmriprep/sub-3011/func/DesignFiles/design_run1.fsf design.fsf
 
-/home/tuo62915/fsl/bin/feat_model design
+/usr/local/fsl/bin/feat_model design
 
-mkdir .files;cp /home/tuo62915/fsl/doc/fsl.css .files;cp -r /home/tuo62915/fsl/doc/images .files/images
+mkdir .files;cp /usr/local/fsl/doc/fsl.css .files;cp -r /usr/local/fsl/doc/images .files/images
 
-/home/tuo62915/fsl/bin/fsl_sub -T 10 -l logs -N feat0_init   /home/tuo62915/fsl/bin/feat /home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/func/Task_run-1.feat/design.fsf -D /home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/func/Task_run-1.feat -I 1 -init
-11940
+/usr/local/fsl/bin/fsl_sub -T 10 -l logs -N feat0_init   /usr/local/fsl/bin/feat /data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/func/Task_run-1.feat/design.fsf -D /data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/func/Task_run-1.feat -I 1 -init
+566464
 
-/home/tuo62915/fsl/bin/fsl_sub -T 30 -l logs -N feat2_pre -j 11940  /home/tuo62915/fsl/bin/feat /home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/func/Task_run-1.feat/design.fsf -D /home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/func/Task_run-1.feat -I 1 -prestats
-12063
+/usr/local/fsl/bin/fsl_sub -T 30 -l logs -N feat2_pre -j 566464  /usr/local/fsl/bin/feat /data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/func/Task_run-1.feat/design.fsf -D /data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/func/Task_run-1.feat -I 1 -prestats
+568679
 
-/home/tuo62915/fsl/bin/fsl_sub -T 128 -l logs -N feat3_film -j 12063  /home/tuo62915/fsl/bin/feat /home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/func/Task_run-1.feat/design.fsf -D /home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/func/Task_run-1.feat -I 1 -stats
+/usr/local/fsl/bin/fsl_sub -T 3030 -l logs -N feat3_film -j 568679  /usr/local/fsl/bin/feat /data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/func/Task_run-1.feat/design.fsf -D /data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/func/Task_run-1.feat -I 1 -stats
+576271
+
+/usr/local/fsl/bin/fsl_sub -T 119 -l logs -N feat4_post -j 576271  /usr/local/fsl/bin/feat /data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/func/Task_run-1.feat/design.fsf -D /data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/func/Task_run-1.feat -poststats 0 
+628527
+
+/usr/local/fsl/bin/fsl_sub -T 1 -l logs -N feat5_stop -j 568679,576271,628527  /usr/local/fsl/bin/feat /data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/func/Task_run-1.feat/design.fsf -D /data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/func/Task_run-1.feat -stop
+629274

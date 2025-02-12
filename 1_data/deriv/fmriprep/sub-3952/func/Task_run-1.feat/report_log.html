@@ -1,21 +1,104 @@
 <HTML><HEAD>
 <!--refreshstart-->
-<META HTTP-EQUIV=REFRESH CONTENT=5>
+
 <!--refreshstop-->
 <link REL=stylesheet TYPE=text/css href=.files/fsl.css>
 <TITLE>FSL</TITLE></HEAD><BODY><OBJECT data=report.html></OBJECT>
 <h2>Progress Report / Log</h2>
-Started at Wed Feb  5 04:32:08 PM EST 2025<p>
+Started at Fri 07 Feb 2025 12:18:09 PM EST<p>
 Feat main script<br><pre>
 
-/bin/cp /home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/DesignFiles/design_run1.fsf design.fsf
+/bin/cp /data/Ashleys_Honors_Thesis/3_analysis/neuro/../../1_data/deriv/fmriprep/sub-3952/func/DesignFiles/design_run1.fsf design.fsf
 
-/home/tuo62915/fsl/bin/feat_model design
+/usr/local/fsl/bin/feat_model design
 
-mkdir .files;cp /home/tuo62915/fsl/doc/fsl.css .files;cp -r /home/tuo62915/fsl/doc/images .files/images
+mkdir .files;cp /usr/local/fsl/doc/fsl.css .files;cp -r /usr/local/fsl/doc/images .files/images
 
-/home/tuo62915/fsl/bin/fsl_sub -T 10 -l logs -N feat0_init   /home/tuo62915/fsl/bin/feat /home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/Task_run-1.feat/design.fsf -D /home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/Task_run-1.feat -I 1 -init
+/usr/local/fsl/bin/fsl_sub -T 10 -l logs -N feat0_init   /usr/local/fsl/bin/feat /data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/Task_run-1.feat/design.fsf -D /data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/Task_run-1.feat -I 1 -init
+567024
+
+/usr/local/fsl/bin/fsl_sub -T 30 -l logs -N feat2_pre -j 567024  /usr/local/fsl/bin/feat /data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/Task_run-1.feat/design.fsf -D /data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/Task_run-1.feat -I 1 -prestats
+569604
+
+/usr/local/fsl/bin/fsl_sub -T 3030 -l logs -N feat3_film -j 569604  /usr/local/fsl/bin/feat /data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/Task_run-1.feat/design.fsf -D /data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/Task_run-1.feat -I 1 -stats
+577447
+
+/usr/local/fsl/bin/fsl_sub -T 119 -l logs -N feat4_post -j 577447  /usr/local/fsl/bin/feat /data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/Task_run-1.feat/design.fsf -D /data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/Task_run-1.feat -poststats 0 
+631214
+
+/usr/local/fsl/bin/fsl_sub -T 1 -l logs -N feat5_stop -j 569604,577447,631214  /usr/local/fsl/bin/feat /data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/Task_run-1.feat/design.fsf -D /data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/Task_run-1.feat -stop
 </pre><hr>Initialisation<br><pre>
 
-/home/tuo62915/fsl/bin/fslmaths /home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/sub-3952_task-uncertainty_run-1_space-MNI152NLin2009cAsym_desc-preproc_bold prefiltered_func_data -odt float
+/usr/local/fsl/bin/fslmaths /data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/sub-3952_task-uncertainty_run-1_space-MNI152NLin2009cAsym_desc-preproc_bold prefiltered_func_data -odt float
+Total original volumes = 729
+
+/usr/local/fsl/bin/fslroi prefiltered_func_data example_func 364 1
+</pre><hr>Preprocessing:Stage 1<br><pre>
+</pre><hr>Preprocessing:Stage 2<br><pre>
+
+/usr/local/fsl/bin/fslmaths prefiltered_func_data filtered_func_data
+
+/usr/local/fsl/bin/fslmaths filtered_func_data -Tmin -bin mask -odt char
+
+/usr/local/fsl/bin/fslstats filtered_func_data -k mask -R | awk '{ print  }' -
+0.016968
+
+/usr/local/fsl/bin/fslmaths filtered_func_data -Tmean mean_func
+
+/bin/rm -rf prefiltered_func_data*
+</pre><hr>Stats<br><pre>
+
+mkdir -p custom_timing_files ; /usr/local/fsl/bin/fslFixText /data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/onset/output.txt custom_timing_files/ev1.txt
+
+paste -d  ' '  /data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/sub-3952_task-uncertainty_run-1_desc-confounds_timeseries_reduced.tsv > confoundevs.txt
+
+/usr/local/fsl/bin/feat_model design confoundevs.txt
+
+/usr/local/fsl/bin/film_gls --in=filtered_func_data --rn=stats --pd=design.mat --thr=0.016968 --sa --ms=5 --con=design.con  
+Log directory is: stats
+paradigm.getDesignMatrix().Nrows()=729
+paradigm.getDesignMatrix().Ncols()=49
+sizeTS=729
+numTS=236512
+Calculating residuals...
+Completed
+Estimating residual autocorrelation...
+Calculating raw AutoCorrs... Completed
+mode = 10.4632
+sig = 452
+Spatially smoothing auto corr estimates
+..........................
+Completed
+Tukey M = 27
+Tukey estimates... Completed
+Completed
+Prewhitening and Computing PEs...
+Percentage done:
+1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,Completed
+Saving results... 
+Completed
+
+/usr/local/fsl/bin/smoothest -d 679   -m mask -r stats/res4d > stats/smoothness
+</pre><hr>Post-stats<br><pre>
+
+/usr/local/fsl/bin/fslmaths stats/zstat1 -mas mask thresh_zstat1
+
+echo 232060 > thresh_zstat1.vol
+zstat1: DLH=4.44228 VOLUME=232060 RESELS=1.04004
+
+/usr/local/fsl/bin/cluster -i thresh_zstat1 -t 3.1 --othresh=thresh_zstat1 -o cluster_mask_zstat1 --connectivity=26  --olmax=lmax_zstat1.txt --scalarname=Z -p 0.05 -d 4.44228 --volume=232060 -c stats/cope1 > cluster_zstat1.txt
+
+/usr/local/fsl/bin/cluster2html . cluster_zstat1 
+
+/usr/local/fsl/bin/fslstats thresh_zstat1 -l 0.0001 -R 2>/dev/null
+3.100247 6.559158 
+Rendering using zmin=3.100247 zmax=6.559158
+
+/usr/local/fsl/bin/overlay 1 0 example_func -a thresh_zstat1 3.100247 6.559158 rendered_thresh_zstat1
+
+/usr/local/fsl/bin/slicer rendered_thresh_zstat1 -A 750 rendered_thresh_zstat1.png
+
+/bin/cp /usr/local/fsl/etc/luts/ramp.gif .ramp.gif
+
+mkdir -p tsplot ; /usr/local/fsl/bin/tsplot . -f filtered_func_data -o tsplot
 </pre><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></BODY></HTML>

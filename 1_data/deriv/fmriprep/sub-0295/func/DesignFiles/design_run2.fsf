@@ -30,7 +30,7 @@ set fmri(featwatcher_yn) 0
 set fmri(sscleanup_yn) 0
 
 # Output directory
-set fmri(outputdir) "/home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-0295/func/Task_run-2"
+set fmri(outputdir) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-0295/func/Task_run-2"
 
 # TR(s)
 set fmri(tr) 2.000000
@@ -276,13 +276,13 @@ set fmri(fnirt_config) "T1_2_MNI152_2mm"
 set fmri(ncopeinputs) 0
 
 # 4D AVW data or FEAT directory (1)
-set feat_files(1) "/home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-0295/func/sub-0295_task-uncertainty_run-2_space-MNI152NLin2009cAsym_desc-preproc_bold"
+set feat_files(1) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-0295/func/sub-0295_task-uncertainty_run-2_space-MNI152NLin2009cAsym_desc-preproc_bold"
 
 # Add confound EVs text file
 set fmri(confoundevs) 1
 
 # Confound EVs text file for analysis 1
-set confoundev_files(1) "/home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-0295/func/sub-0295_task-uncertainty_run-2_desc-confounds_timeseries_reduced.tsv"
+set confoundev_files(1) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-0295/func/sub-0295_task-uncertainty_run-2_desc-confounds_timeseries_reduced.tsv"
 
 # EV 1 title
 set fmri(evtitle1) "Video"
@@ -317,7 +317,7 @@ set fmri(tempfilt_yn1) 1
 set fmri(deriv_yn1) 0
 
 # Custom EV file (EV 1)
-set fmri(custom1) "/home/tuo62915/Documents/GitHub/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-0295/onset/output.txt"
+set fmri(custom1) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-0295/onset/output.txt"
 
 # Orthogonalise EV 1 wrt EV 0
 set fmri(ortho1.0) 0
