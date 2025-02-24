@@ -26,4 +26,3 @@ sed -i -e "s|sub-105|${subj}|g" \
 # Now everything is set up to run feat
 echo "===> Running FEAT for ${subj}"
 /usr/local/fsl/bin/feat ${DERIV}/${subj}/func/DesignFiles/design_lvl2_MPFC.fsf
-
