@@ -1,2 +1,5 @@
 *.nii.gz
 1_data/deriv/fmriprep/*
+*/Task_run-*.feat/*
+*/Task_lvl-*.gfeat/*
+*.css
