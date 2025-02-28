@@ -21,7 +21,7 @@ SUBJECTS=`cat ${CODE}/particpants.txt`
     # We are using the | character to delimit the patterns
     case "${SUBJ}" in
  
-	0035 | 4590 | 6943 | 6799 | 6977 | 8746 | 5006 )
+	sub-0035 | sub-4590 | sub-6943 | sub-6799 | sub-6977 | sub-8746 | sub-5006 )
 		sed -i -e "s|sub-0295|${SUBJ}|g" \
 				-e "s|run-1|run-${RUN}|g" \
 				-e "s|run1|run${RUN}|g" \

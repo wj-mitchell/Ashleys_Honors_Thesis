@@ -1,0 +1,67 @@
+filename	roi_mPFCv2_bin.nii.gz
+
+sizeof_hdr	348
+data_type	FLOAT32
+dim0		3
+dim1		91
+dim2		109
+dim3		91
+dim4		1
+dim5		1
+dim6		1
+dim7		1
+vox_units	mm
+time_units	s
+datatype	16
+nbyper		4
+bitpix		32
+pixdim0		-1.000000
+pixdim1		2.000000
+pixdim2		2.000000
+pixdim3		2.000000
+pixdim4		1.000000
+pixdim5		0.000000
+pixdim6		0.000000
+pixdim7		0.000000
+vox_offset	352
+cal_max		0.000000
+cal_min		0.000000
+scl_slope	1.000000
+scl_inter	0.000000
+phase_dim	0
+freq_dim	0
+slice_dim	0
+slice_name	Unknown
+slice_code	0
+slice_start	0
+slice_end	0
+slice_duration	0.000000
+toffset		0.000000
+intent		Unknown
+intent_code	0
+intent_name	
+intent_p1	0.000000
+intent_p2	0.000000
+intent_p3	0.000000
+qform_name	MNI_152
+qform_code	4
+qto_xyz:1	-2.000000 0.000000 -0.000000 90.000000 
+qto_xyz:2	0.000000 2.000000 -0.000000 -126.000000 
+qto_xyz:3	0.000000 0.000000 2.000000 -72.000000 
+qto_xyz:4	0.000000 0.000000 0.000000 1.000000 
+qform_xorient	Right-to-Left
+qform_yorient	Posterior-to-Anterior
+qform_zorient	Inferior-to-Superior
+sform_name	MNI_152
+sform_code	4
+sto_xyz:1	-2.000000 0.000000 0.000000 90.000000 
+sto_xyz:2	0.000000 2.000000 0.000000 -126.000000 
+sto_xyz:3	0.000000 0.000000 2.000000 -72.000000 
+sto_xyz:4	0.000000 0.000000 0.000000 1.000000 
+sform_xorient	Right-to-Left
+sform_yorient	Posterior-to-Anterior
+sform_zorient	Inferior-to-Superior
+file_type	NIFTI-1+
+file_code	1
+descrip		6.0.5:9e026117
+aux_file	
