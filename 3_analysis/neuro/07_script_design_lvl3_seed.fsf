@@ -172,7 +172,7 @@ set fmri(constcol) 0
 set fmri(poststats_yn) 0
 
 # Pre-threshold masking?
-set fmri(threshmask) "/data/Ashleys_Honors_Thesis/3_analysis/neuro/rois/roi_amyg.nii.gz"
+set fmri(threshmask) "/data/Ashleys_Honors_Thesis/3_analysis/neuro/rois/roi_mPFCv2_bin_3mm.nii.gz"
 
 # Thresholding
 # 0 : None
@@ -1077,109 +1077,109 @@ set fmri(ortho5.5) 0
 set fmri(ortho5.6) 0
 
 # Higher-level EV value for EV 5 and input 1
-set fmri(evg1.5) 0.8074131
+set fmri(evg1.5) 1.157937014
 
 # Higher-level EV value for EV 5 and input 2
-set fmri(evg2.5) 0.33975304
+set fmri(evg2.5) -1.110041809
 
 # Higher-level EV value for EV 5 and input 3
-set fmri(evg3.5) 0.02797966
+set fmri(evg3.5) 0.960721
 
 # Higher-level EV value for EV 5 and input 4
-set fmri(evg4.5) 0.18386635
+set fmri(evg4.5) 0.073251
 
 # Higher-level EV value for EV 5 and input 5
-set fmri(evg5.5) -0.9073405
+set fmri(evg5.5) -0.81422
 
 # Higher-level EV value for EV 5 and input 6
-set fmri(evg6.5) -1.5308872
+set fmri(evg6.5) -1.20865
 
 # Higher-level EV value for EV 5 and input 7
-set fmri(evg7.5) -1.5308872
+set fmri(evg7.5) -0.81422
 
 # Higher-level EV value for EV 5 and input 8
-set fmri(evg8.5) 0.02797966
+set fmri(evg8.5) 1.059329
 
 # Higher-level EV value for EV 5 and input 9
-set fmri(evg9.5) -0.4396804
+set fmri(evg9.5) 0.171859
 
 # Higher-level EV value for EV 5 and input 10
-set fmri(evg10.5) 1.89861991
+set fmri(evg10.5) 1.059329
 
 # Higher-level EV value for EV 5 and input 11
-set fmri(evg11.5) 0.33975304
+set fmri(evg11.5) 0.960721
 
 # Higher-level EV value for EV 5 and input 12
-set fmri(evg12.5) -0.4396804
+set fmri(evg12.5) 0.369075
 
 # Higher-level EV value for EV 5 and input 13
-set fmri(evg13.5) 1.89861991
+set fmri(evg13.5) 1.256545
 
 # Higher-level EV value for EV 5 and input 14
-set fmri(evg14.5) 0.18386635
+set fmri(evg14.5) -0.22257
 
 # Higher-level EV value for EV 5 and input 15
-set fmri(evg15.5) -1.2191138
+set fmri(evg15.5) -0.91283
 
 # Higher-level EV value for EV 5 and input 16
-set fmri(evg16.5) -1.0632271
+set fmri(evg16.5) -1.60308
 
 # Higher-level EV value for EV 5 and input 17
-set fmri(evg17.5) -0.127907
+set fmri(evg17.5) -0.71561
 
 # Higher-level EV value for EV 5 and input 18
-set fmri(evg18.5) -0.5955671
+set fmri(evg18.5) 1.45376
 
 # Higher-level EV value for EV 5 and input 19
-set fmri(evg19.5) -1.2191138
+set fmri(evg19.5) -0.5184
 
 # Higher-level EV value for EV 5 and input 20
-set fmri(evg20.5) -0.7514538
+set fmri(evg20.5) -1.30726
 
 # Higher-level EV value for EV 5 and input 21
-set fmri(evg21.5) -1.2191138
+set fmri(evg21.5) -1.30726
 
 # Higher-level EV value for EV 5 and input 22
-set fmri(evg22.5) -0.127907
+set fmri(evg22.5) -0.71561
 
 # Higher-level EV value for EV 5 and input 23
-set fmri(evg23.5) 0.8074131
+set fmri(evg23.5) 0.369075
 
 # Higher-level EV value for EV 5 and input 24
-set fmri(evg24.5) 1.27507316
+set fmri(evg24.5) 1.059329
 
 # Higher-level EV value for EV 5 and input 25
-set fmri(evg25.5) -0.9073405
+set fmri(evg25.5) -1.40587
 
 # Higher-level EV value for EV 5 and input 26
-set fmri(evg26.5) 0.02797966
+set fmri(evg26.5) -0.41979
 
 # Higher-level EV value for EV 5 and input 27
-set fmri(evg27.5) 0.65152641
+set fmri(evg27.5) 1.355153
 
 # Higher-level EV value for EV 5 and input 28
-set fmri(evg28.5) 0.02797966
+set fmri(evg28.5) -0.32118
 
 # Higher-level EV value for EV 5 and input 29
-set fmri(evg29.5) 0.8074131
+set fmri(evg29.5) 1.552368
 
 # Higher-level EV value for EV 5 and input 30
-set fmri(evg30.5) 2.36627997
+set fmri(evg30.5) 1.157937
 
 # Higher-level EV value for EV 5 and input 31
-set fmri(evg31.5) -0.5955671
+set fmri(evg31.5) -0.22257
 
 # Higher-level EV value for EV 5 and input 32
-set fmri(evg32.5) 0.02797966
+set fmri(evg32.5) -0.81422
 
 # Higher-level EV value for EV 5 and input 33
-set fmri(evg33.5) -0.2837937
+set fmri(evg33.5) 1.157937
 
 # Higher-level EV value for EV 5 and input 34
-set fmri(evg34.5) 0.65152641
+set fmri(evg34.5) 0.369075
 
 # Higher-level EV value for EV 5 and input 35
-set fmri(evg35.5) -1.0632271
+set fmri(evg35.5) -1.11004
 
 # EV 6 title
 set fmri(evtitle6) "Age"

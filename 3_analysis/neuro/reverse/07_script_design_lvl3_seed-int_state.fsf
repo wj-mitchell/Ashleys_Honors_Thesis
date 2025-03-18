@@ -30,7 +30,7 @@ set fmri(featwatcher_yn) 0
 set fmri(sscleanup_yn) 0
 
 # Output directory
-set fmri(outputdir) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/Task_lvl-3_seed-int"
+set fmri(outputdir) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/Task_lvl-3_seed-int_state_reverse"
 
 # TR(s)
 set fmri(tr) 3
@@ -172,7 +172,7 @@ set fmri(constcol) 0
 set fmri(poststats_yn) 0
 
 # Pre-threshold masking?
-set fmri(threshmask) "/data/Ashleys_Honors_Thesis/3_analysis/neuro/rois/roi_mPFCv2_bin_3mm.nii.gz"
+set fmri(threshmask) "/data/Ashleys_Honors_Thesis/3_analysis/neuro/rois/roi_amyg_bin_3mm.nii.gz"
 
 # Thresholding
 # 0 : None
@@ -269,109 +269,109 @@ set fmri(paradigm_hp) 100
 set fmri(ncopeinputs) 0
 
 # 4D AVW data or FEAT directory (1)
-set feat_files(1) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-0295/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(1) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-0295/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (2)
-set feat_files(2) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-2579/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(2) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-2579/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (3)
-set feat_files(3) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(3) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3011/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (4)
-set feat_files(4) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3274/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(4) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3274/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (5)
-set feat_files(5) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(5) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3952/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (6)
-set feat_files(6) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3981/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(6) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3981/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (7)
-set feat_files(7) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-4781/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(7) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-4781/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (8)
-set feat_files(8) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-5006/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(8) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-5006/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (9)
-set feat_files(9) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-5849/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(9) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-5849/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (10)
-set feat_files(10) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-6215/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(10) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-6215/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (11)
-set feat_files(11) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-6971/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(11) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-6971/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (12)
-set feat_files(12) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-6977/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(12) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-6977/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (13)
-set feat_files(13) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-7255/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(13) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-7255/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (14)
-set feat_files(14) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-7492/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(14) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-7492/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (15)
-set feat_files(15) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-8929/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(15) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-8929/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (16)
-set feat_files(16) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-0208/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(16) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-0208/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (17)
-set feat_files(17) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-0757/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(17) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-0757/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (18)
-set feat_files(18) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-2610/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(18) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-2610/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (19)
-set feat_files(19) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-2758/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(19) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-2758/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (20)
-set feat_files(20) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3046/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(20) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3046/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (21)
-set feat_files(21) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3801/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(21) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3801/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (22)
-set feat_files(22) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3951/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(22) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3951/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (23)
-set feat_files(23) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-4407/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(23) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-4407/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (24)
-set feat_files(24) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-4590/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(24) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-4590/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (25)
-set feat_files(25) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-6021/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(25) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-6021/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (26)
-set feat_files(26) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-6269/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(26) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-6269/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (27)
-set feat_files(27) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-6773/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(27) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-6773/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (28)
-set feat_files(28) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-6799/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(28) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-6799/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (29)
-set feat_files(29) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-7758/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(29) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-7758/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (30)
-set feat_files(30) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-8607/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(30) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-8607/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (31)
-set feat_files(31) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-8621/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(31) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-8621/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (32)
-set feat_files(32) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-8746/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(32) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-8746/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (33)
-set feat_files(33) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-9436/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(33) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-9436/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (34)
-set feat_files(34) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-9827/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(34) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-9827/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # 4D AVW data or FEAT directory (35)
-set feat_files(35) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-9907/func/Task_lvl-2.gfeat/cope2.feat/stats/cope1.nii.gz/"
+set feat_files(35) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-9907/func/Task_lvl-2_reverse.gfeat/cope2.feat/stats/cope1.nii.gz/"
 
 # Add confound EVs text file
 set fmri(confoundevs) 0
@@ -1077,109 +1077,109 @@ set fmri(ortho5.5) 0
 set fmri(ortho5.6) 0
 
 # Higher-level EV value for EV 5 and input 1
-set fmri(evg1.5) 1.157937014
+set fmri(evg1.5) 0.8074131
 
 # Higher-level EV value for EV 5 and input 2
-set fmri(evg2.5) -1.110041809
+set fmri(evg2.5) 0.33975304
 
 # Higher-level EV value for EV 5 and input 3
-set fmri(evg3.5) 0.960721
+set fmri(evg3.5) 0.02797966
 
 # Higher-level EV value for EV 5 and input 4
-set fmri(evg4.5) 0.073251
+set fmri(evg4.5) 0.18386635
 
 # Higher-level EV value for EV 5 and input 5
-set fmri(evg5.5) -0.81422
+set fmri(evg5.5) -0.9073405
 
 # Higher-level EV value for EV 5 and input 6
-set fmri(evg6.5) -1.20865
+set fmri(evg6.5) -1.5308872
 
 # Higher-level EV value for EV 5 and input 7
-set fmri(evg7.5) -0.81422
+set fmri(evg7.5) -1.5308872
 
 # Higher-level EV value for EV 5 and input 8
-set fmri(evg8.5) 1.059329
+set fmri(evg8.5) 0.02797966
 
 # Higher-level EV value for EV 5 and input 9
-set fmri(evg9.5) 0.171859
+set fmri(evg9.5) -0.4396804
 
 # Higher-level EV value for EV 5 and input 10
-set fmri(evg10.5) 1.059329
+set fmri(evg10.5) 1.89861991
 
 # Higher-level EV value for EV 5 and input 11
-set fmri(evg11.5) 0.960721
+set fmri(evg11.5) 0.33975304
 
 # Higher-level EV value for EV 5 and input 12
-set fmri(evg12.5) 0.369075
+set fmri(evg12.5) -0.4396804
 
 # Higher-level EV value for EV 5 and input 13
-set fmri(evg13.5) 1.256545
+set fmri(evg13.5) 1.89861991
 
 # Higher-level EV value for EV 5 and input 14
-set fmri(evg14.5) -0.22257
+set fmri(evg14.5) 0.18386635
 
 # Higher-level EV value for EV 5 and input 15
-set fmri(evg15.5) -0.91283
+set fmri(evg15.5) -1.2191138
 
 # Higher-level EV value for EV 5 and input 16
-set fmri(evg16.5) -1.60308
+set fmri(evg16.5) -1.0632271
 
 # Higher-level EV value for EV 5 and input 17
-set fmri(evg17.5) -0.71561
+set fmri(evg17.5) -0.127907
 
 # Higher-level EV value for EV 5 and input 18
-set fmri(evg18.5) 1.45376
+set fmri(evg18.5) -0.5955671
 
 # Higher-level EV value for EV 5 and input 19
-set fmri(evg19.5) -0.5184
+set fmri(evg19.5) -1.2191138
 
 # Higher-level EV value for EV 5 and input 20
-set fmri(evg20.5) -1.30726
+set fmri(evg20.5) -0.7514538
 
 # Higher-level EV value for EV 5 and input 21
-set fmri(evg21.5) -1.30726
+set fmri(evg21.5) -1.2191138
 
 # Higher-level EV value for EV 5 and input 22
-set fmri(evg22.5) -0.71561
+set fmri(evg22.5) -0.127907
 
 # Higher-level EV value for EV 5 and input 23
-set fmri(evg23.5) 0.369075
+set fmri(evg23.5) 0.8074131
 
 # Higher-level EV value for EV 5 and input 24
-set fmri(evg24.5) 1.059329
+set fmri(evg24.5) 1.27507316
 
 # Higher-level EV value for EV 5 and input 25
-set fmri(evg25.5) -1.40587
+set fmri(evg25.5) -0.9073405
 
 # Higher-level EV value for EV 5 and input 26
-set fmri(evg26.5) -0.41979
+set fmri(evg26.5) 0.02797966
 
 # Higher-level EV value for EV 5 and input 27
-set fmri(evg27.5) 1.355153
+set fmri(evg27.5) 0.65152641
 
 # Higher-level EV value for EV 5 and input 28
-set fmri(evg28.5) -0.32118
+set fmri(evg28.5) 0.02797966
 
 # Higher-level EV value for EV 5 and input 29
-set fmri(evg29.5) 1.552368
+set fmri(evg29.5) 0.8074131
 
 # Higher-level EV value for EV 5 and input 30
-set fmri(evg30.5) 1.157937
+set fmri(evg30.5) 2.36627997
 
 # Higher-level EV value for EV 5 and input 31
-set fmri(evg31.5) -0.22257
+set fmri(evg31.5) -0.5955671
 
 # Higher-level EV value for EV 5 and input 32
-set fmri(evg32.5) -0.81422
+set fmri(evg32.5) 0.02797966
 
 # Higher-level EV value for EV 5 and input 33
-set fmri(evg33.5) 1.157937
+set fmri(evg33.5) -0.2837937
 
 # Higher-level EV value for EV 5 and input 34
-set fmri(evg34.5) 0.369075
+set fmri(evg34.5) 0.65152641
 
 # Higher-level EV value for EV 5 and input 35
-set fmri(evg35.5) -1.11004
+set fmri(evg35.5) -1.0632271
 
 # EV 6 title
 set fmri(evtitle6) "Age"

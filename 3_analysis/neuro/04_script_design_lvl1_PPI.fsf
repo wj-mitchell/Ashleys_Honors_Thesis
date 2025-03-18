@@ -172,7 +172,7 @@ set fmri(constcol) 0
 set fmri(poststats_yn) 0
 
 # Pre-threshold masking?
-set fmri(threshmask) "/data/Ashleys_Honors_Thesis/3_analysis/neuro/rois/roi_amyg.nii.gz"
+set fmri(threshmask) "/data/Ashleys_Honors_Thesis/3_analysis/neuro/rois/roi_mPFCv2_bin_3mm.nii.gz"
 
 # Thresholding
 # 0 : None
@@ -282,7 +282,7 @@ set fmri(confoundevs) 1
 set confoundev_files(1) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-0295/func/sub-0295_task-uncertainty_run-1_desc-confounds_timeseries_reduced.tsv"
 
 # EV 1 title
-set fmri(evtitle1) "mPFC"
+set fmri(evtitle1) "amyg"
 
 # Basic waveform shape (EV 1)
 # 0 : Square
@@ -314,7 +314,7 @@ set fmri(tempfilt_yn1) 1
 set fmri(deriv_yn1) 0
 
 # Custom EV file (EV 1)
-set fmri(custom1) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-0295/func/sub-0295_task-uncertainty_run-1_roi-mPFC_timecourse.txt"
+set fmri(custom1) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-0295/func/sub-0295_task-uncertainty_run-1_roi-amyg_timecourse.txt"
 
 # Orthogonalise EV 1 wrt EV 0
 set fmri(ortho1.0) 0
