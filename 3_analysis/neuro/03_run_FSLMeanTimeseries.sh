@@ -16,7 +16,7 @@ for subj in ${SUBJECTS}; do
     for run in 1 2 ; do
 
         # The feat directory containing first level process information
-        FEAT=${PROJECT}/${subj}/func/Task_run-${run}.feat
+        FEAT=${PROJECT}/${subj}/func/Task_run-${run}+.feat
 
         # echo "===> Creating registration files for ${subj}'s run ${run}"
         # mkdir ${FEAT}/reg

@@ -17,8 +17,8 @@ for subj in ${SUBJECTS}; do
     for run in 1 2 ; do
 
         #Manages the number of jobs and cores
-        SCRIPTNAME=${CODE}/*_script_FirstLvlAnalysis_PPI.sh
-        NSUBJ=15
+        SCRIPTNAME=${CODE}/*_script_FirstLvlAnalysis_PPIwPreStim.sh
+        NSUBJ=20
         while [ $(ps -ef | grep -v grep | grep $SCRIPTNAME | wc -l) -ge $NSUBJ ]; do
             sleep 30s
         done

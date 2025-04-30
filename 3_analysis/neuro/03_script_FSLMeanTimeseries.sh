@@ -10,9 +10,9 @@ CODE=/data/Ashleys_Honors_Thesis/3_analysis/neuro
 #kj- add path ROI for rois 
 ROI=${CODE}/rois
 # The feat directory containing first level process information
-FEAT=${PROJECT}/${subj}/func/Task_run-${run}.feat     
+FEAT=${PROJECT}/${subj}/func/Task_run-${run}+.feat     
 
 echo "===> Extracting timeseries of ${subj}'s run ${run} ${roi}" 
 fslmeants -i ${PROJECT}/${subj}/func/${subj}_task-uncertainty_run-${run}_space-MNI152NLin2009cAsym_desc-preproc_bold.nii.gz \
-	      -o ${PROJECT}/${subj}/func/${subj}_task-uncertainty_run-${run}_roi-${roi}_timecourse.txt \
+	      -o ${PROJECT}/${subj}/func/${subj}_task-uncertainty_run-${run}+_roi-${roi}_timecourse.txt \
 	      -m ${CODE}/rois/roi_${roi}_bin_3mm.nii.gz

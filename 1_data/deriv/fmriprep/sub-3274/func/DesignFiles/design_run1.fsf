@@ -30,7 +30,7 @@ set fmri(featwatcher_yn) 0
 set fmri(sscleanup_yn) 0
 
 # Output directory
-set fmri(outputdir) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3274/func/Task_run-1"
+set fmri(outputdir) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-0295/func/Task_run-1"
 
 # TR(s)
 set fmri(tr) 2.000000
@@ -153,8 +153,8 @@ set fmri(mixed_yn) 2
 set fmri(randomisePermutations) 5000
 
 # Number of EVs
-set fmri(evs_orig) 1
-set fmri(evs_real) 1
+set fmri(evs_orig) 2
+set fmri(evs_real) 2
 set fmri(evs_vox) 0
 
 # Number of contrasts
@@ -179,7 +179,7 @@ set fmri(threshmask) ""
 # 1 : Uncorrected
 # 2 : Voxel
 # 3 : Cluster
-set fmri(thresh) 3
+set fmri(thresh) 0
 
 # P threshold
 set fmri(prob_thresh) 0.05
@@ -212,7 +212,7 @@ set fmri(rendertype) 1
 set fmri(bgimage) 1
 
 # Create time series plots
-set fmri(tsplot_yn) 1
+set fmri(tsplot_yn) 0
 
 # Registration to initial structural
 set fmri(reginitial_highres_yn) 0
@@ -269,20 +269,17 @@ set fmri(paradigm_hp) 100
 set fmri(totalVoxels) 237161925
 
 
-set fmri(fnirt_config) "T1_2_MNI152_2mm"
-
-
 # Number of lower-level copes feeding into higher-level analysis
 set fmri(ncopeinputs) 0
 
 # 4D AVW data or FEAT directory (1)
-set feat_files(1) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3274/func/sub-3274_task-uncertainty_run-1_space-MNI152NLin2009cAsym_desc-preproc_bold"
+set feat_files(1) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-0295/func/sub-0295_task-uncertainty_run-1_space-MNI152NLin2009cAsym_desc-preproc_bold"
 
 # Add confound EVs text file
 set fmri(confoundevs) 1
 
 # Confound EVs text file for analysis 1
-set confoundev_files(1) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3274/func/sub-3274_task-uncertainty_run-1_desc-confounds_timeseries_reduced.tsv"
+set confoundev_files(1) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-0295/func/sub-0295_task-uncertainty_run-1_desc-confounds_timeseries_reduced.tsv"
 
 # EV 1 title
 set fmri(evtitle1) "Video"
@@ -317,13 +314,60 @@ set fmri(tempfilt_yn1) 1
 set fmri(deriv_yn1) 0
 
 # Custom EV file (EV 1)
-set fmri(custom1) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-3274/onset/output.txt"
+set fmri(custom1) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-0295/onset/output.txt"
 
 # Orthogonalise EV 1 wrt EV 0
 set fmri(ortho1.0) 0
 
 # Orthogonalise EV 1 wrt EV 1
 set fmri(ortho1.1) 0
+
+# Orthogonalise EV 1 wrt EV 2
+set fmri(ortho1.2) 0
+
+# EV 2 title
+set fmri(evtitle2) "PreStim"
+
+# Basic waveform shape (EV 2)
+# 0 : Square
+# 1 : Sinusoid
+# 2 : Custom (1 entry per volume)
+# 3 : Custom (3 column format)
+# 4 : Interaction
+# 10 : Empty (all zeros)
+set fmri(shape2) 3
+
+# Convolution (EV 2)
+# 0 : None
+# 1 : Gaussian
+# 2 : Gamma
+# 3 : Double-Gamma HRF
+# 4 : Gamma basis functions
+# 5 : Sine basis functions
+# 6 : FIR basis functions
+# 8 : Alternate Double-Gamma
+set fmri(convolve2) 3
+
+# Convolve phase (EV 2)
+set fmri(convolve_phase2) 0
+
+# Apply temporal filtering (EV 2)
+set fmri(tempfilt_yn2) 1
+
+# Add temporal derivative (EV 2)
+set fmri(deriv_yn2) 0
+
+# Custom EV file (EV 2)
+set fmri(custom2) "/data/Ashleys_Honors_Thesis/1_data/deriv/fmriprep/sub-0295/onset/visual_prestim.txt"
+
+# Orthogonalise EV 2 wrt EV 0
+set fmri(ortho2.0) 0
+
+# Orthogonalise EV 2 wrt EV 1
+set fmri(ortho2.1) 0
+
+# Orthogonalise EV 2 wrt EV 2
+set fmri(ortho2.2) 0
 
 # Contrast & F-tests mode
 # real : control real EVs
@@ -340,6 +384,9 @@ set fmri(conname_real.1) "Video"
 # Real contrast_real vector 1 element 1
 set fmri(con_real1.1) 1
 
+# Real contrast_real vector 1 element 2
+set fmri(con_real1.2) 0
+
 # Display images for contrast_orig 1
 set fmri(conpic_orig.1) 1
 
@@ -348,6 +395,9 @@ set fmri(conname_orig.1) "Video"
 
 # Real contrast_orig vector 1 element 1
 set fmri(con_orig1.1) 1
+
+# Real contrast_orig vector 1 element 2
+set fmri(con_orig1.2) 0
 
 # Contrast masking - use >0 instead of thresholding?
 set fmri(conmask_zerothresh_yn) 0

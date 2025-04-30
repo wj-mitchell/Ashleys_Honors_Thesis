@@ -22,7 +22,7 @@ for SUBJ in ${SUBJECTS}; do
         echo "+ Fixing Registration For ${SUBJ}'s Run ${RUN} ActiveVPassive Data+" 
         
         # denote the path to their feat directory
-        FEATPATH=${DERIV}/${SUBJ}/func/Task_run-${RUN}.feat
+        FEATPATH=${DERIV}/${SUBJ}/func/Task_run-${RUN}+.feat
 
         # Remove any matrix files from registration
         mkdir ${FEATPATH}/archive

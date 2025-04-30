@@ -29,25 +29,27 @@ for RUN in 1 2 ; do
     # We are using the | character to delimit the patterns
     case "$SUBJ" in
 
-	0035 | 4590 | 6943 | 6799 | 6977 | 8746 | 5006 )
+	sub-0035 | sub-4590 | sub-6943 | sub-6799 | sub-6977 | sub-8746 | sub-5006 )
 		sed -i -e "s|sub-0295|${SUBJ}|g" \
 				-e "s|run-1|run-${RUN}|g" \
 				-e "s|run1|run${RUN}|g" \
 				-e "s|Run-1|Run-${RUN}|g" \
 				-e "s|Run1|Run${RUN}|g" \
 				-e "s|729|759|g"\
-				${FILENAME} ;;
+				${FILENAME}
+
+        /usr/local/fsl/bin/feat ${FILENAME} ;;          
     * )
-		sed -i -e "s|sub-0295|${SUBJ}|g" \
-				-e "s|run-1|run-${RUN}|g" \
-				-e "s|run1|run${RUN}|g" \
-				-e "s|Run-1|Run-${RUN}|g" \
-				-e "s|Run1|Run${RUN}|g" \
-				${FILENAME} ;;
+		# sed -i -e "s|sub-0295|${SUBJ}|g" \
+		# 		-e "s|run-1|run-${RUN}|g" \
+		# 		-e "s|run1|run${RUN}|g" \
+		# 		-e "s|Run-1|Run-${RUN}|g" \
+		# 		-e "s|Run1|Run${RUN}|g" \
+		# 		${FILENAME} ;;
 esac
 
     # Now everything is set up to run feat
-    echo "===> Running FEAT for ${SUBJ}, run ${RUN}"
-    /usr/local/fsl/bin/feat ${FILENAME}   
+    # echo "===> Running FEAT for ${SUBJ}, run ${RUN}"
+    # /usr/local/fsl/bin/feat ${FILENAME}   
 
 done

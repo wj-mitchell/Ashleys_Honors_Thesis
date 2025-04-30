@@ -18,7 +18,7 @@ for subj in ${SUBJECTS}; do
 
         #Manages the number of jobs and cores
         SCRIPTNAME=${CODE}/*_script_FirstLvlAnalysis_PPI.sh
-        NSUBJ=15
+        NSUBJ=25
         while [ $(ps -ef | grep -v grep | grep $SCRIPTNAME | wc -l) -ge $NSUBJ ]; do
             sleep 30s
         done
